@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiderActivity" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:text="Call An Uber"
+        android:padding="10dp"
+        android:onClick="callUber"
+        android:id="@+id/uberButton"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:text="Logout"
+        android:padding="10dp"
+        android:onClick="logout"
+        android:id="@+id/logout"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"></Button>
+
+    <TextView
+        android:id="@+id/driverInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_weight="1"
+        android:textSize="18sp" />
+
+</fragment>
